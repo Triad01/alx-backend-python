@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-""" module for task 3
-"""
+'''Module for task 3.
+'''
 
-def to_str(n:float) -> str:
-    """ returns string rep of a float
-    """
+
+def to_str(n: float) -> str:
+    '''Cast a floting type number in to a string.
+    '''
     return str(n)
