@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
-"""module for task 0
-"""
+'''Module 0 task
+'''
 import asyncio
 import random
+from typing import Generator
 
 
-async def async_generator():
-    """defines a coroutine
-        that returns random float numbers
-    """
-    for i in range(10):
+async def async_generator() -> Generator[float, None, None]:
+    '''Generates a sequence of 10 numbers.
+    '''
+    for _ in range(10):
         await asyncio.sleep(1)
-        number = random.uniform(0, 10)
-        yield number
+        yield random.random() * 10
